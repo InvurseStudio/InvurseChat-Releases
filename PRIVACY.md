@@ -1,6 +1,6 @@
 # InvurseChat privacy policy
 
-_Last updated October 9, 2026._
+_Last updated October 16, 2026._
 
 InvurseChat is made by Invurse Studio. It runs AI models on your own Mac, and
 it's built so that your conversations stay with you.
@@ -18,7 +18,9 @@ usage information, and has no servers that could.
 - **Files you attach** are read on your Mac. Documents are indexed on your
   Mac so you can ask about them later.
 - **The model** runs on your Mac. Your messages are not sent to any AI
-  service.
+  service. On Macs with Apple Intelligence, small jobs (writing the briefing,
+  Summarize and Rewrite) use Apple's on-device model, which also
+  runs on your Mac. You can turn that off in Settings → Advanced.
 - **Scheduled tasks** you set up run on your Mac. What they did is kept in an
   activity log on your Mac, and their results are saved as chats like any other.
   Changes a task wants to make wait for your approval, unless you chose "Don't
@@ -30,6 +32,21 @@ usage information, and has no servers that could.
   kind of change, and always asks before deleting. InvurseChat doesn't copy them
   anywhere. Event details the assistant reads become part of that chat, which
   is saved like any other chat, including on a paired device that asked.
+- **Voice.** When you ask Quick Ask by voice, or turn on the "Hey Invurse" wake
+  word, your speech is turned into text on your Mac with Apple's on-device
+  speech recognition. Audio isn't saved or sent anywhere. The wake word is off
+  until you turn it on.
+- **Memory** holds facts you ask the assistant to remember. It asks before
+  saving one. They're stored on your Mac, added to your chats' instructions,
+  and you can see, edit or delete them in Settings → Memory, or turn memory off.
+- **Contacts and files.** Contacts are off until you turn them on in Settings →
+  Memory. When you ask about your own life or work, the assistant can search
+  them and your files on your Mac: Documents, Desktop, Downloads and iCloud Drive
+  until you change that list, through Spotlight. It only reads them and doesn't
+  copy them anywhere; what it finds becomes part of that chat.
+- **Messages** are sent only when you ask the assistant to message someone. It
+  shows you the message and asks first, unless you chose "Don't ask again" for
+  messages. They go from your own Messages account, like any message you send.
 
 You can delete chats in the app. Uninstalling the app and removing
 `~/Library/Application Support/InvurseChat` removes everything it stored.
@@ -42,7 +59,7 @@ InvurseChat connects to the internet only for these things:
 | --- | --- | --- |
 | The Mac app checks for updates (about once a day, if you allow it, or when you choose Check for Updates) | GitHub, where releases are published | A normal download request, which names the app and its version |
 | You download or search for a model | Hugging Face | The name of the model or search |
-| You attach your first document (a small document-search model is downloaded once) | Chroma's model files, on Amazon S3 | A normal download request |
+| You attach your first document or the assistant first uses memory (a small search model is downloaded once) | Chroma's model files, on Amazon S3 | A normal download request |
 | A request needs the web (for example, you ask about current events) | DuckDuckGo, with Bing as a fallback | The search words |
 | A request needs the web, and you turned on a search provider in Settings → Services (Brave Search, Tavily, Exa, Kagi, or your own SearXNG) | That provider, tried in the order you set | The search words and the key you entered for it |
 | The model opens a web page it found | That website | A normal page request |
