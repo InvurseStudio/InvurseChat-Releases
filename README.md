@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="assets/InvurseChatIcon.svg" alt="InvurseChat icon" width="140" height="140">
+  <img src="assets/VireoIcon.svg" alt="Vireo icon" width="140" height="140">
 </p>
 
-<h1 align="center">InvurseChat</h1>
+<h1 align="center">Vireo</h1>
+
+<p align="center"><em>Formerly InvurseChat</em></p>
 
 <p align="center">
   <strong>Private AI that runs on your Mac.</strong><br>
@@ -11,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/InvurseStudio/InvurseChat-Releases?label=latest&color=5B4FD6&style=flat-square" alt="Latest release"></a>
+  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/InvurseStudio/Vireo-Releases?label=latest&color=5B4FD6&style=flat-square" alt="Latest release"></a>
   <img src="https://img.shields.io/badge/macOS-14%2B-17171C?logo=apple&logoColor=white&style=flat-square" alt="macOS 14 or later">
   <img src="https://img.shields.io/badge/Apple%20Silicon-M1%20or%20later-17171C?logo=apple&logoColor=white&style=flat-square" alt="Apple Silicon">
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-17171C?logo=windows&logoColor=white&style=flat-square" alt="Windows 10 or 11">
@@ -25,12 +27,12 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-mac.png" alt="InvurseChat on macOS: a conversation with a model running on the Mac" width="820">
+  <img src="assets/screenshot-mac.png" alt="Vireo on macOS: a conversation with a model running on the Mac" width="820">
 </p>
 
 ---
 
-## Why InvurseChat
+## Why Vireo
 
 <table>
 <tr>
@@ -87,11 +89,14 @@ there. Other apps can use it too, through an OpenAI-compatible API.
 
 Grab the latest version from the **[Releases page](../../releases/latest)**.
 
+Releases up to 0.7.7 and the Windows client still use the name InvurseChat. Your
+chats and settings carry over.
+
 | | Mac | Windows |
 | --- | --- | --- |
-| **File** | `InvurseChat-<version>-arm64.dmg` | `InvurseChat-Setup-<version>-x64.exe` (installer), or `InvurseChat-Portable-<version>-x64.exe` to run without installing |
+| **File** | `Vireo-<version>-arm64.dmg` | `InvurseChat-Setup-<version>-x64.exe` (installer), or `InvurseChat-Portable-<version>-x64.exe` to run without installing |
 | **Role** | Runs the model and keeps your chats | Chat client for your Mac |
-| **Needs** | Apple Silicon (M1 or later), macOS 14 or later | Windows 10 or 11 (x64), and InvurseChat on a Mac on the same network |
+| **Needs** | Apple Silicon (M1 or later), macOS 14 or later | Windows 10 or 11 (x64), and Vireo on a Mac on the same network |
 
 ### How much memory do I need?
 
@@ -109,8 +114,8 @@ open it.
 <details open>
 <summary><strong>On your Mac</strong></summary>
 
-1. Open the DMG and drag **InvurseChat** to **Applications**.
-2. Open InvurseChat. Setup recommends a model for your Mac and downloads it.
+1. Open the DMG and drag **Vireo** to **Applications**.
+2. Open Vireo. Setup recommends a model for your Mac and downloads it.
 3. Start chatting. Attach files with **+** or by dragging them in.
 
 </details>
@@ -121,7 +126,7 @@ open it.
 1. Run `InvurseChat-Setup-<version>-x64.exe`.
    The installer isn't code-signed yet, so Windows SmartScreen may say
    "Windows protected your PC". Choose **More info**, then **Run anyway**.
-2. On your Mac, open InvurseChat **Settings**, turn on **Allow network
+2. On your Mac, open Vireo **Settings**, turn on **Allow network
    access**, and choose **Pair a Device…**.
 3. Enter the code shown on your Mac in the Windows app.
 
@@ -130,7 +135,7 @@ open it.
 ## Updates
 
 The Mac app checks for new versions and installs them for you (you can turn
-this off in Settings, or choose **InvurseChat › Check for Updates…** at any
+this off in Settings, or choose **Vireo › Check for Updates…** at any
 time). Every update is signed, and checked before it's installed.
 The Windows app doesn't update itself yet: download the new installer from
 the [Releases page](../../releases/latest).
@@ -178,7 +183,7 @@ Companion apps are on the way in a future update.
 
 ## About
 
-InvurseChat is my first major app. I started it to learn how local AI really
+Vireo is my first major app. I started it to learn how local AI really
 works: running models on a Mac, streaming replies, tools, and connecting other
 devices. Along the way it grew into the app I wanted to use every day.
 
@@ -192,7 +197,7 @@ implement fixes and polish.
 
 ## Privacy
 
-InvurseChat collects nothing: no accounts, analytics or tracking. Read the
+Vireo collects nothing: no accounts, analytics or tracking. Read the
 full [privacy policy](PRIVACY.md).
 
 ## Feedback
@@ -204,6 +209,6 @@ have a GitHub account.
 ---
 
 <p align="center">
-  <img src="assets/InvurseChatIcon.svg" alt="" width="28" height="28"><br>
+  <img src="assets/VireoIcon.svg" alt="" width="28" height="28"><br>
   Developed in Canada 🍁 by <strong>Invurse Studio</strong>
 </p>

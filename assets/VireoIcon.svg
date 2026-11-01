@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <!-- Flat copy of InvurseChat.icon for the README and web. The apps build from the .icon. -->
+  <!-- Flat copy of Vireo.icon for the README and web. The apps build from the .icon. -->
   <rect x="100" y="100" width="824" height="824" rx="185" fill="#17171C"/>
   <g transform="translate(100 100) scale(4.12)">
     <path d="M64 38H136A30 30 0 0 1 166 68V114A30 30 0 0 1 136 144H84L60 164C56 167 51 164 52 159L55 143A30 30 0 0 1 34 114V68A30 30 0 0 1 64 38Z" fill="#C9C1FF"/>

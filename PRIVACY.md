@@ -1,13 +1,13 @@
-# InvurseChat privacy policy
+# Vireo privacy policy
 
 _Last updated October 16, 2026._
 
-InvurseChat is made by Invurse Studio. It runs AI models on your own Mac, and
+Vireo (formerly InvurseChat) is made by Invurse Studio. It runs AI models on your own Mac, and
 it's built so that your conversations stay with you.
 
 ## What we collect
 
-Nothing. InvurseChat has no accounts, analytics, crash reporting, advertising
+Nothing. Vireo has no accounts, analytics, crash reporting, advertising
 or tracking. Invurse Studio doesn't receive your chats, files, prompts or
 usage information, and has no servers that could.
 
@@ -29,10 +29,10 @@ usage information, and has no servers that could.
   Services and allow access in macOS. The assistant reads them on your Mac,
   only from the calendars and lists you choose. It asks you before it adds,
   changes or completes anything, unless you chose "Don't ask again" for that
-  kind of change, and always asks before deleting. InvurseChat doesn't copy them
+  kind of change, and always asks before deleting. Vireo doesn't copy them
   anywhere. Event details the assistant reads become part of that chat, which
   is saved like any other chat, including on a paired device that asked.
-- **Voice.** When you ask Quick Ask by voice, or turn on the "Hey Invurse" wake
+- **Voice.** When you ask Quick Ask by voice, or turn on the "Hey Vireo" wake
   word, your speech is turned into text on your Mac with Apple's on-device
   speech recognition. Audio isn't saved or sent anywhere. The wake word is off
   until you turn it on.
@@ -53,7 +53,7 @@ You can delete chats in the app. Uninstalling the app and removing
 
 ## When the app goes online
 
-InvurseChat connects to the internet only for these things:
+Vireo connects to the internet only for these things:
 
 | When | Service | What it receives |
 | --- | --- | --- |
@@ -81,7 +81,7 @@ history to them, only what the request needs.
 
 ## Children
 
-InvurseChat isn't directed at children under 13, and it doesn't knowingly
+Vireo isn't directed at children under 13, and it doesn't knowingly
 collect anyone's information.
 
 ## Changes
