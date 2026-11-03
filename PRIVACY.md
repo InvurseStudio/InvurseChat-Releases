@@ -1,6 +1,6 @@
 # Vireo privacy policy
 
-_Last updated October 16, 2026._
+_Last updated November 3, 2026._
 
 Vireo (formerly InvurseChat) is made by Invurse Studio. It runs AI models on your own Mac, and
 it's built so that your conversations stay with you.
@@ -20,7 +20,7 @@ usage information, and has no servers that could.
 - **The model** runs on your Mac. Your messages are not sent to any AI
   service. On Macs with Apple Intelligence, small jobs (writing the briefing,
   Summarize and Rewrite) use Apple's on-device model, which also
-  runs on your Mac. You can turn that off in Settings → Advanced.
+  runs on your Mac. You can turn that off in Settings → Model.
 - **Scheduled tasks** you set up run on your Mac. What they did is kept in an
   activity log on your Mac, and their results are saved as chats like any other.
   Changes a task wants to make wait for your approval, unless you chose "Don't
@@ -44,6 +44,19 @@ usage information, and has no servers that could.
   them and your files on your Mac: Documents, Desktop, Downloads and iCloud Drive
   until you change that list, through Spotlight. It only reads them and doesn't
   copy them anywhere; what it finds becomes part of that chat.
+- **Watched folders** you add in Settings → Assistant are indexed on your Mac so
+  the assistant can search them. Their files are only read, never changed or
+  copied anywhere; the index stays on your Mac, and removing a folder removes
+  its files from the index.
+- **Your screen.** When you ask about what's on screen, the assistant reads the
+  window you were using (or the whole screen, without Vireo's own windows) with
+  Apple's on-device text recognition. It asks first, unless you chose "Don't
+  ask again", and needs macOS's Screen Recording permission. The image isn't
+  saved or sent anywhere; the text it reads becomes part of that chat. It's
+  never done for paired devices or scheduled tasks.
+- **Undo copies.** When the assistant changes or replaces a file, it keeps a
+  private copy of what was there on your Mac, so **Undo this run** can put it
+  back. Copies are deleted after 14 days. Files it deletes go to your Trash.
 - **Messages** are sent only when you ask the assistant to message someone. It
   shows you the message and asks first, unless you chose "Don't ask again" for
   messages. They go from your own Messages account, like any message you send.
@@ -59,10 +72,11 @@ Vireo connects to the internet only for these things:
 | --- | --- | --- |
 | The Mac app checks for updates (about once a day, if you allow it, or when you choose Check for Updates) | GitHub, where releases are published | A normal download request, which names the app and its version |
 | You download or search for a model | Hugging Face | The name of the model or search |
-| You attach your first document or the assistant first uses memory (a small search model is downloaded once) | Chroma's model files, on Amazon S3 | A normal download request |
+| You attach your first document, add a watched folder, or the assistant first uses memory (a small search model is downloaded once) | Chroma's model files, on Amazon S3 | A normal download request |
 | A request needs the web (for example, you ask about current events) | DuckDuckGo, with Bing as a fallback | The search words |
 | A request needs the web, and you turned on a search provider in Settings → Services (Brave Search, Tavily, Exa, Kagi, or your own SearXNG) | That provider, tried in the order you set | The search words and the key you entered for it |
 | The model opens a web page it found | That website | A normal page request |
+| You add an MCP server in Settings → Integrations, and the assistant uses one of its tools | The server you set up (servers that run on your Mac don't go online unless they do so themselves) | What the assistant sends to that tool |
 | You ask about the weather, or your daily briefing includes it | Open-Meteo, with wttr.in as a fallback | The place you asked about. If you don't name a place, wttr.in estimates it from your internet address. |
 
 Search providers in Settings → Services are off until you turn one on. Their
