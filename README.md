@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-mac.png" alt="Vireo on macOS: a conversation with a model running on the Mac" width="820">
+  <img src="assets/screenshot-mac.png" alt="Vireo on macOS: a chat with a model running on the Mac, showing the steps it took" width="820">
 </p>
 
 ---
