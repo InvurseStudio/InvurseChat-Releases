@@ -101,16 +101,6 @@ Speech is recognised on your Mac.
 </tr>
 </table>
 
-## Coming in 0.8
-
-The screenshot above is from the next update, the first under the Vireo name:
-
-- A new look, in the colours of [invursestudio.com](https://invursestudio.com).
-- Each step shows as a checklist while it works, then folds away when the answer is done.
-- Small actions like adding a reminder are approved right in the reply.
-- **Undo this run** puts back the files a reply changed, and deleted files go to the Trash.
-- Chats name themselves and are grouped by day.
-
 ## Download
 
 Grab the latest version from the **[Releases page](../../releases/latest)**.
