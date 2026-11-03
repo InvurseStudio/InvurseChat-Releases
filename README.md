@@ -83,7 +83,33 @@ there. Other apps can use it too, through an OpenAI-compatible API.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+### 🗓️ Keeps track of your day
+Ask what's on today, find a free hour, or add events and reminders. Get a
+morning briefing, have it run tasks on a schedule, and tell it what to remember.
+
+</td>
+<td valign="top">
+
+### ✨ Quick Ask, from any app
+A small panel over whatever you're doing. Type, or hold a shortcut and talk.
+Speech is recognised on your Mac.
+
+</td>
+</tr>
 </table>
+
+## Coming in 0.8
+
+The screenshot above is from the next update, the first under the Vireo name:
+
+- A new look, in the colours of [invursestudio.com](https://invursestudio.com).
+- Each step shows as a checklist while it works, then folds away when the answer is done.
+- Small actions like adding a reminder are approved right in the reply.
+- **Undo this run** puts back the files a reply changed, and deleted files go to the Trash.
+- Chats name themselves and are grouped by day.
 
 ## Download
 
