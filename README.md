@@ -23,7 +23,7 @@
 <p align="center">
   <a href="../../releases/latest"><img src="https://img.shields.io/badge/Download%20for%20Mac-5B4FD6?logo=apple&logoColor=white&style=for-the-badge" alt="Download for Mac"></a>
   &nbsp;
-  <a href="../../releases/latest"><img src="https://img.shields.io/badge/Download%20for%20Windows-17171C?logo=windows&logoColor=white&style=for-the-badge" alt="Download for Windows"></a>
+  <a href="../../releases/tag/v0.7.7"><img src="https://img.shields.io/badge/Download%20for%20Windows-17171C?logo=windows&logoColor=white&style=for-the-badge" alt="Download for Windows"></a>
 </p>
 
 <p align="center">
@@ -63,7 +63,8 @@ Or add the models you already have, including an LM Studio library.
 
 ### 📎 Works with your files
 Drop in PDFs, Word documents, spreadsheets, text and images, and ask about
-them. It can search the web when a question needs current information.
+them, or let it keep folders indexed. It can search the web when a question
+needs current information.
 
 </td>
 </tr>
@@ -72,7 +73,8 @@ them. It can search the web when a question needs current information.
 
 ### ✅ You stay in control
 Deleting or moving files, running commands and exporting documents all wait
-for your approval. You see each step as it works.
+for your approval. You see each step as it works, and **Undo this run** puts
+back any files it changed.
 
 </td>
 <td valign="top">
@@ -108,6 +110,10 @@ Grab the latest version from the **[Releases page](../../releases/latest)**.
 Releases up to 0.7.7 and the Windows client still use the name InvurseChat. Your
 chats and settings carry over.
 
+Vireo 0.8 is for the Mac only. The current Windows app (0.7.5) is attached to the
+[0.7.7 release](../../releases/tag/v0.7.7) and works with Vireo 0.8 on your Mac.
+A new native Windows app is coming soon.
+
 | | Mac | Windows |
 | --- | --- | --- |
 | **File** | `Vireo-<version>-arm64.dmg` | `InvurseChat-Setup-<version>-x64.exe` (installer), or `InvurseChat-Portable-<version>-x64.exe` to run without installing |
@@ -139,7 +145,8 @@ open it.
 <details>
 <summary><strong>On your Windows PC</strong></summary>
 
-1. Run `InvurseChat-Setup-<version>-x64.exe`.
+1. Run `InvurseChat-Setup-<version>-x64.exe`, from the
+   [0.7.7 release](../../releases/tag/v0.7.7).
    The installer isn't code-signed yet, so Windows SmartScreen may say
    "Windows protected your PC". Choose **More info**, then **Run anyway**.
 2. On your Mac, open Vireo **Settings**, turn on **Allow network
@@ -154,7 +161,7 @@ The Mac app checks for new versions and installs them for you (you can turn
 this off in Settings, or choose **Vireo › Check for Updates…** at any
 time). Every update is signed, and checked before it's installed.
 The Windows app doesn't update itself yet: download the new installer from
-the [Releases page](../../releases/latest).
+the [Releases page](../../releases) when there is one.
 
 ## FAQ
 
