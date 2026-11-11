@@ -7,9 +7,10 @@
 <p align="center"><em>Formerly InvurseChat</em></p>
 
 <p align="center">
-  <strong>Private AI that runs on your Mac.</strong><br>
-  Open models like Gemma and Qwen, running on your own hardware.<br>
-  Chat from your Mac or your Windows PC. Your conversations never leave home.
+  <strong>The private AI agent that does real work on your Mac.</strong><br>
+  Hand it a job, not just a question. It works through your files, plans the steps,<br>
+  checks its work and asks before it changes anything.<br>
+  Open models like Gemma and Qwen, running on your own hardware. Nothing leaves home.
 </p>
 
 <p align="center">
@@ -31,6 +32,37 @@
 </p>
 
 ---
+
+## An agent, not just a chat window
+
+Vireo started as a private chat app. Now it's an agent: give it a job and it gets
+on with it. It reads your files, uses tools on your Mac, works through each step
+and comes back with the work done, not just an answer.
+
+- *"Process the November invoices in Finance and log them in the tracker."*
+- *"Sort these donation requests against our policy and draft the replies."*
+- *"Fill the sponsorship template for Harbour Lane, then make a slide deck from it."*
+- *"Check this trip against the travel policy and work out the per diems."*
+- *"Every time a new invoice lands in this folder, log it."*
+
+**How a job runs**
+
+1. **It plans.** Longer jobs get a short checklist, and you can see the step it's on.
+2. **It uses real tools.** It reads and writes Word, Excel and PowerPoint files,
+   reads Pages, Numbers and Keynote, searches your files, earlier chats and the
+   web, checks your calendar, runs your Shortcuts, and does sums with an exact
+   calculator. MCP servers add more.
+3. **It follows your rules.** It reads the policy that applies, flags what doesn't
+   fit, and marks things as pending until someone approves them.
+4. **It checks its work.** Turn on **Check its work**, and after a job that
+   changed files it looks over the result and fixes mistakes before you see it.
+5. **You approve, and can undo.** Changes wait for your OK, and **Undo this run**
+   puts back any files it changed.
+6. **It learns.** After a long job it can offer to save how it did it as a skill,
+   and it remembers the people and facts that matter, once you approve.
+
+It can also work on its own: on a schedule, when new files arrive in a folder,
+or when a private link is opened. Changes it wants to make still wait for you.
 
 ## Why Vireo
 
@@ -62,9 +94,9 @@ Or add the models you already have, including an LM Studio library.
 <td valign="top">
 
 ### 📎 Works with your files
-Reads and writes Word, Excel and PowerPoint files, reads Pages, Numbers and
-Keynote, and handles PDFs, text and images. Ask about them, or let it keep
-folders indexed. It can search the web when a question needs current information.
+Word, Excel, PowerPoint, Pages, Numbers, Keynote, PDFs, text and images. It
+reads them, fills templates, updates spreadsheets and builds decks, and keeps
+the folders you choose indexed so it can find things by what they say.
 
 </td>
 </tr>
@@ -80,8 +112,8 @@ its own work, and **Undo this run** puts back any files it changed.
 <td valign="top">
 
 ### 💻 Your Mac, from your PC
-Pair a Windows PC with a one-time code and chat with your Mac's model from
-there. Other apps can use it too, through an OpenAI-compatible API.
+Pair a Windows PC with a one-time code and use your Mac's model from there.
+Other apps can use it too, through an OpenAI-compatible API.
 
 </td>
 </tr>
@@ -90,8 +122,8 @@ there. Other apps can use it too, through an OpenAI-compatible API.
 
 ### 🗓️ Keeps track of your day
 Ask what's on today, find a free hour, or add events and reminders. Get a
-morning briefing, and run tasks on a schedule or when new files arrive. It
-remembers what matters, and learns skills from the jobs it does.
+morning briefing, and hand off routine jobs to run on a schedule or when new
+files arrive.
 
 </td>
 <td valign="top">
@@ -152,6 +184,11 @@ A new native Windows app is coming soon. See the
 Not sure? The app looks at your Mac and recommends one the first time you
 open it.
 
+For agent jobs on your own files, larger models do noticeably better. The 0.9
+tests used Gemma 4 31B, Qwen 3.8 27B and Muse Glimmer 30B, which suit Macs with
+48 GB of memory or more. Gemma, Qwen and Muse Glimmer each get settings tuned for
+agent work.
+
 ## Getting started
 
 <details open>
@@ -159,7 +196,7 @@ open it.
 
 1. Open the DMG and drag **Vireo** to **Applications**.
 2. Open Vireo. Setup recommends a model for your Mac and downloads it.
-3. Start chatting. Attach files with **+** or by dragging them in.
+3. Ask a question, or give it a job. Attach files with **+** or by dragging them in.
 
 </details>
 
@@ -187,9 +224,30 @@ the [Releases page](../../releases) when there is one.
 ## FAQ
 
 <details>
+<summary><strong>What's the difference between an assistant and an agent?</strong></summary>
+
+An assistant answers. An agent does the work. Ask Vireo about a folder of
+invoices and it can read each one, check them against your policy, add up the
+totals, log them in your spreadsheet and draft the emails, showing each step as
+it goes. It still asks before it changes anything.
+
+</details>
+
+<details>
+<summary><strong>Will it change my files without asking?</strong></summary>
+
+No. Writing, moving and deleting files, running commands, changing your calendar
+and sending messages all wait for your approval. You can choose "Don't ask
+again" for some kinds of change, but deleting files and running commands always
+ask, and saving over an existing file always asks. **Undo this run** puts back
+any files a job changed, and deleted files go to the Trash.
+
+</details>
+
+<details>
 <summary><strong>Does it work offline?</strong></summary>
 
-Yes. Once a model is downloaded, chatting works with no internet connection.
+Yes. Once a model is downloaded, chats and agent jobs work with no internet connection.
 Only web searches, weather, model downloads and update checks need to go
 online.
 
@@ -229,7 +287,8 @@ Companion apps are on the way in a future update.
 
 Vireo is my first major app. I started it to learn how local AI really
 works: running models on a Mac, streaming replies, tools, and connecting other
-devices. Along the way it grew into the app I wanted to use every day.
+devices. Along the way it grew into the app I wanted to use every day, and then
+into an agent that can take real work off my plate.
 
 It's made by one person at Invurse Studio in Canada, and it's still early. It's
 also signed and notarized by Apple, updates itself safely, and never collects
