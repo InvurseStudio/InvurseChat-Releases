@@ -62,9 +62,9 @@ Or add the models you already have, including an LM Studio library.
 <td valign="top">
 
 ### 📎 Works with your files
-Drop in PDFs, Word documents, spreadsheets, text and images, and ask about
-them, or let it keep folders indexed. It can search the web when a question
-needs current information.
+Reads and writes Word, Excel and PowerPoint files, reads Pages, Numbers and
+Keynote, and handles PDFs, text and images. Ask about them, or let it keep
+folders indexed. It can search the web when a question needs current information.
 
 </td>
 </tr>
@@ -73,8 +73,8 @@ needs current information.
 
 ### ✅ You stay in control
 Deleting or moving files, running commands and exporting documents all wait
-for your approval. You see each step as it works, and **Undo this run** puts
-back any files it changed.
+for your approval. You see its plan and each step as it works, it can check
+its own work, and **Undo this run** puts back any files it changed.
 
 </td>
 <td valign="top">
@@ -90,7 +90,8 @@ there. Other apps can use it too, through an OpenAI-compatible API.
 
 ### 🗓️ Keeps track of your day
 Ask what's on today, find a free hour, or add events and reminders. Get a
-morning briefing, have it run tasks on a schedule, and tell it what to remember.
+morning briefing, and run tasks on a schedule or when new files arrive. It
+remembers what matters, and learns skills from the jobs it does.
 
 </td>
 <td valign="top">
@@ -103,6 +104,25 @@ Speech is recognised on your Mac.
 </tr>
 </table>
 
+## Tested on real work
+
+Before 0.9 shipped, three local models worked through a month of made-up office
+work in Vireo: 32 tasks covering invoices, donations, events, travel, expenses
+and inventory, plus four safety traps. The problems that turned up on Vireo's
+side were fixed, and the whole test was run again.
+
+| Model | Fully right (of 32) | Partly right | Wrong | Time |
+| --- | --- | --- | --- | --- |
+| Gemma 4 31B | 22 → **25** | 9 → 7 | 1 → **0** | 59 → **52** min |
+| Muse Glimmer 30B | 16 → **24** | 15 → 8 | 1 → **0** | 86 → **79** min |
+| Qwen 3.8 27B | 20 → **27** | 10 → 5 | 2 → **0** | 132 → **118** min |
+
+No model got a task wrong after the fixes, and all three handled the safety
+traps correctly both times. Each model ran once before and once after, so small
+differences can be down to luck. Read the
+[before-and-after report](test-results/Vireo-0.9-Before-After.pdf) (PDF) for
+every task in plain language. All test data is fictional.
+
 ## Download
 
 Grab the latest version from the **[Releases page](../../releases/latest)**.
@@ -110,9 +130,10 @@ Grab the latest version from the **[Releases page](../../releases/latest)**.
 Releases up to 0.7.7 and the Windows client still use the name InvurseChat. Your
 chats and settings carry over.
 
-Vireo 0.8 is for the Mac only. The current Windows app (0.7.5) is attached to the
-[0.7.7 release](../../releases/tag/v0.7.7) and works with Vireo 0.8 on your Mac.
-A new native Windows app is coming soon.
+Vireo 0.9 is for the Mac only. The current Windows app (0.7.5) is attached to the
+[0.7.7 release](../../releases/tag/v0.7.7) and works with Vireo 0.9 on your Mac.
+A new native Windows app is coming soon. See the
+[0.9 release notes](../../releases/tag/v0.9.0) for everything that's new.
 
 | | Mac | Windows |
 | --- | --- | --- |
@@ -149,7 +170,7 @@ open it.
    [0.7.7 release](../../releases/tag/v0.7.7).
    The installer isn't code-signed yet, so Windows SmartScreen may say
    "Windows protected your PC". Choose **More info**, then **Run anyway**.
-2. On your Mac, open Vireo **Settings**, turn on **Allow network
+2. On your Mac, open Vireo **Settings › Sharing**, turn on **Allow network
    access**, and choose **Pair a Device…**.
 3. Enter the code shown on your Mac in the Windows app.
 
